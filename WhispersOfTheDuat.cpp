@@ -1413,7 +1413,7 @@ void AnotherGod()
     SetColor(11);
     CenterText("Horus");
     CenterText("< When you have dressed, meet me outside. >");
-    CenterText("< We have much to discuss. >");
+    CenterText("< We have much to discuss, little priest. >");
     SetColor(7);
     Sleep(4000);
 }
