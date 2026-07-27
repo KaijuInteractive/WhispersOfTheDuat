@@ -1,0 +1,7 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="WhispersOfTheDuat.vcxproj" Id="189c8546-f8ff-4d5d-9d47-b10f71ad6f05" />
+</Solution>
