@@ -152,7 +152,7 @@ void SetupConsole()
 
 void CenterText(string text)
 {
-    int x = (WIDTH - text.length()) / 2;
+    int x = (WIDTH - static_cast<int>(text.length())) / 2;
     HANDLE hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
     COORD pos;
     pos.X = x;
@@ -1421,7 +1421,7 @@ void HorusOutside()
     Sleep(4000);
 
     ClearScreen();
-    BlankLines(11);
+    BlankLines(10);
     CenterText("The desert night is warm and still.");
     BlankLines(1);
     Sleep(2000);
@@ -1434,7 +1434,7 @@ void HorusOutside()
     Sleep(6000);
 
     ClearScreen();
-    BlankLines(12);
+    BlankLines(10);
     SetColor(11);
     CenterText("Horus");
     CenterText("< It seems you've caught the attention >");
@@ -1443,7 +1443,7 @@ void HorusOutside()
     Sleep(6000);
 
     ClearScreen();
-    BlankLines(12);
+    BlankLines(10);
     SetColor(6);
     CenterText(" " + playerName + " ");
     CenterText("< I don't understand why those two feel that way. >");
@@ -1458,7 +1458,7 @@ void HorusOutside()
     BlankLines(1);
     SetColor(11);
     CenterText("Horus");
-    CenterText("< Oh " + playerName + ", you're so much more than that. >");
+    CenterText("< Oh, " + playerName + ", you're so much more than that. >");
     BlankLines(2);
     Sleep(2500);
     CenterText("< And who said it was just the two of them? >");
@@ -1469,6 +1469,7 @@ void HorusOutside()
     BlankLines(12);
     CenterText("You swallow hard before finally meeting");
     CenterText("his warm, radiant gaze.");
+    Sleep(4000);
 
     int choice = 0;
 
@@ -1501,7 +1502,7 @@ void HorusOutside()
             Sleep(2000);
         }
     }
-
+    cin.ignore(10000, '\n');
     ClearScreen();
 
     if (choice == 1)
@@ -1546,9 +1547,92 @@ void HorusOutside()
     }
 
     ClearScreen();
+    BlankLines(10);
+    CenterText("Warm, strong arms suddenly encircle your waist.");
+    BlankLines(1);
+    Sleep(2000);
+    CenterText("Horus gently pulls you back against his chest.");
+    Sleep(4000);
+    
+    ClearScreen();
+    BlankLines(8);
+    SetColor(11);
+    CenterText("Horus");
+    CenterText("< " + playerName + ", dawn approaches. >");
+    Sleep(3000);
+    BlankLines(1);
+    CenterText("< I know this night has burdened you with >");
+    CenterText("< many difficult choices. >");
+    Sleep(3000);
+    BlankLines(1);
+    CenterText("< I have no wish to add to that burden. >");
+    CenterText("< But I cannot pretend my heart is any >");
+    CenterText("< different from theirs. >");
+    Sleep(3000);
+    BlankLines(1);
+    CenterText("< I, too, long to be close to you. >");
+    SetColor(7);
+    Sleep(6000);
 
+    ClearScreen();
+    BlankLines(8);
+    CenterText("Your breath catches in your throat.");
+    Sleep(3000);
+    BlankLines(1);
+    CenterText("Before you can speak, Horus gently turns");
+    CenterText("you to face him.");
+    Sleep(3000);
+    BlankLines(1);
+    CenterText("Without another word, he leans forward");
+    Sleep(3000);
+    BlankLines(1);
+    CenterText("and softly kisses you.");
+    Sleep(5000);
+
+    ClearScreen();
+    BlankLines(12);
+    CenterText("The first rays of dawn spill across the desert.");
+    Sleep(3000);
+    BlankLines(1);
+    CenterText("For a brief moment, the world seems to stand still.");
+    Sleep(4000);
+
+    ClearScreen();
+    BlankLines(10);
+    SetColor(11);
+    CenterText("Horus");
+    CenterText("< I must take my leave now, " + playerName + ". >");
+    Sleep(2000);
+    BlankLines(1);
+    CenterText("< But rest assured, we will see each other again soon. >");
+    SetColor(7);
+    Sleep(6000);
+
+    ClearScreen();
+    BlankLines(10);
+    CenterText("Bathed in the light of dawn,");
+    CenterText("Horus quietly disappears.");
+    Sleep(5000);
+
+    ClearScreen();
+    BlankLines(8);
+    CenterText("As the sun slowly rises over the desert dunes,");
+    CenterText("you return to your room and collapse onto");
+    CenterText("the familiar straw mat.");
+    CenterText("Sleep comes quickly.");
+    Sleep(4000);
+    BlankLines(1);
+    CenterText("Anubis.");
+    Sleep(2000);
+    BlankLines(1);
+    CenterText("Set.");
+    Sleep(2000);
+    BlankLines(1);
+    CenterText("Horus.");
+    Sleep(2000);
+    BlankLines(1);
+    CenterText("Their faces linger in your dreams.");
+    Sleep(4000);
 
 }
-
-
 
