@@ -54,6 +54,8 @@ void AnubisDeparts();
 void Alone();
 void AnotherGod();
 void HorusOutside();
+void NileWalk();
+void ScarySobek();
 
 int main()
 {
@@ -61,7 +63,7 @@ int main()
 
     playerName = "Kaiju";
 
-    HorusOutside();
+    ScarySobek();
 
     return 0;
 }
@@ -904,6 +906,7 @@ void EnterSet()
 
     BlankLines(12);
     SetColor(5);
+    CenterText("???");
     CenterText("< Well, well... what have we here? >");
     SetColor(7);
     Sleep(3000);
@@ -1633,6 +1636,199 @@ void HorusOutside()
     BlankLines(1);
     CenterText("Their faces linger in your dreams.");
     Sleep(4000);
+    ClearScreen();
+}
+
+void NileWalk()
+{
+    BlankLines(10);
+    CenterText("Golden afternoon light spills through the");
+    CenterText("small window of your room, slowly drawing");
+    CenterText("you from sleep.");
+    Sleep(4000);
+
+    BlankLines(1);
+
+    CenterText("With a sleepy sigh, your hand wanders over");
+    CenterText("your smooth, toned chest before settling");
+    CenterText("against the lingering firmness between your legs.");
+    Sleep(6000);
+
+    ClearScreen();
+
+    BlankLines(10);
+    CenterText("You briefly toy with the idea of pleasing yourself");
+    CenterText("to thoughts of him again, but decide against it.");
+    Sleep(4000);
+
+    BlankLines(1);
+    CenterText("You need something else to occupy your mind.");
+    Sleep(4000);
+
+    BlankLines(1);
+    CenterText("After slipping into your sandals, you step");
+    CenterText("outside and make your way toward the Nile.");
+    Sleep(4000);
+}
+
+void ScarySobek()
+{
+    ClearScreen();
+    BlankLines(8);
+    CenterText("Warm afternoon sunlight dances across the Nile.");
+    Sleep(2500);
+
+    BlankLines(1);
+    CenterText("Papyrus reeds sway gently in the breeze.");
+    Sleep(2500);
+
+    BlankLines(1);
+    CenterText("The steady sound of flowing water begins");
+    CenterText("to quiet your restless mind.");
+    Sleep(3500);
+
+    BlankLines(1);
+    CenterText("Finding a quiet stretch of shoreline,");
+    CenterText("you lower yourself onto the warm sand.");
+    Sleep(4000);
+
+    ClearScreen();
+    BlankLines(8);
+    CenterText("For a long while...");
+    Sleep(2000);
+
+    BlankLines(1);
+    CenterText("There is only silence.");
+    Sleep(3000);
+
+    BlankLines(2);
+    CenterText("...");
+    Sleep(2500);
+
+    BlankLines(1);
+    CenterText("A ripple disturbs the calm surface of the river.");
+    Sleep(3500);
+
+    ClearScreen();
+    BlankLines(8);
+    CenterText("Your eyes narrow.");
+    Sleep(2000);
+
+    BlankLines(1);
+    CenterText("Another ripple.");
+    Sleep(2500);
+
+    BlankLines(1);
+    CenterText("Then another.");
+    Sleep(3000);
+
+    BlankLines(1);
+    CenterText("Something large is swimming toward the shore.");
+    Sleep(4000);
+
+    ClearScreen();
+    BlankLines(8);
+    CenterText("Your heart begins to pound.");
+    Sleep(2500);
+
+    BlankLines(1);
+    CenterText("A massive crocodile's head slowly rises");
+    CenterText("from the dark water.");
+    Sleep(3500);
+
+    BlankLines(1);
+    CenterText("Golden eyes lock onto yours.");
+    Sleep(3500);
+
+    BlankLines(1);
+    CenterText("It is coming straight toward you.");
+    Sleep(4000);
+
+    ClearScreen();
+    BlankLines(8);
+    CenterText("Every instinct tells you to run.");
+    Sleep(2500);
+
+    BlankLines(1);
+    CenterText("Yet your legs refuse to move.");
+    Sleep(3000);
+
+    BlankLines(1);
+    CenterText("You can only watch as the enormous beast");
+    CenterText("emerges from the Nile.");
+    Sleep(5000);
+
+    ClearScreen();
+    BlankLines(8);
+    CenterText("Water pours from emerald scales as the");
+    CenterText("towering crocodile steps onto the shore.");
+    Sleep(4000);
+
+    BlankLines(1);
+    CenterText("The creature studies you in silence.");
+    Sleep(3000);
+    BlankLines(2);
+    CenterText("Then...");
+    Sleep(3000);
+
+    ClearScreen();
+    BlankLines(10);
+    SetColor(10);
+    CenterText("???");
+    CenterText("< Relax, little priest. >");
+    Sleep(3000);
+    CenterText("< If I intended to eat you... >");
+    Sleep(3000);
+
+    BlankLines(1);
+    CenterText("< ...I wouldn't have announced my arrival. >");
+    SetColor(7);
+    Sleep(5000);
+
+    ClearScreen();
+    BlankLines(10);
+    CenterText("Recognition comes almost instantly.");
+    CenterText("There is no mistaking Sobek, the");
+    CenterText("crocodile-headed god.");
+    Sleep(3000);
+
+    BlankLines(1);
+    CenterText("Water streams from his broad, muscular");
+    CenterText("frame as he regards you with quiet amusement.");
+    Sleep(6000);
+    ClearScreen();
+
+    BlankLines(10);
+    SetColor(10);
+    CenterText("Sobek");
+    CenterText("< I haven't come for a snack. >");
+    Sleep(3000);
+    CenterText("< I've come to share a little wisdom. >");
+    SetColor(7);
+    Sleep(4000);
+
+    ClearScreen();
+    BlankLines(10);
+    CenterText("Sobek unceremoniously plops down onto");
+    CenterText("the warm sand beside you with a satisfied grunt.");
+    Sleep(3000);
+    BlankLines(1);
+    CenterText("For several long moments, he simply watches");
+    CenterText("the Nile drift lazily past.");
+    Sleep(4000);
+
+    ClearScreen();
+    BlankLines(10);
+    SetColor(10);
+    CenterText("Sobek");
+    CenterText("< Hmmm... >");
+    Sleep(3000);
+    BlankLines(1);
+    CenterText("< So tell me, " + playerName + "... >");
+    CenterText("< How does it feel to have the gods >");
+    CenterText("< vying for your favor? >");
+    Sleep(4000);
 
 }
+
 
