@@ -58,17 +58,9 @@ void HorusOutside();
 int main()
 {
     SetupConsole();
-    Intro();
-    ClearScreen();
-    AskPlayerName();
-    TempleMainRoom();
-    OutsideTemple();
-    OutsideRoom();
-    InsideRoom();
-    EnterSet();
-    AnubisDeparts();
-    Alone();
-    AnotherGod();
+
+    playerName = "Kaiju";
+
     HorusOutside();
 
     return 0;
@@ -1392,7 +1384,7 @@ void AnotherGod()
     CenterText("Horus");
     CenterText("< If you must... >");
     SetColor(7);
-    Sleep(4000);
+    Sleep(6000);
 
     ClearScreen();
     BlankLines(10);
@@ -1403,11 +1395,12 @@ void AnotherGod()
     BlankLines(1);
     Sleep(2000);
     CenterText("dignity you have left.");
-    Sleep(4000);
+    Sleep(6000);
 
     ClearScreen();
     BlankLines(10);
     CenterText("With your loincloth finally back in place,");
+    Sleep(2000);
     CenterText("you breathe a sigh of relief.");
     BlankLines(2);
     SetColor(11);
@@ -1415,12 +1408,144 @@ void AnotherGod()
     CenterText("< When you have dressed, meet me outside. >");
     CenterText("< We have much to discuss. >");
     SetColor(7);
-    Sleep(4000);
+    Sleep(6000);
 }
 
 void HorusOutside()
 {
 
+    ClearScreen();
+    BlankLines(12);
+    CenterText("You hastily put on your loincloth and meet");
+    CenterText("Horus outside.");
+    Sleep(4000);
+
+    ClearScreen();
+    BlankLines(11);
+    CenterText("The desert night is warm and still.");
+    BlankLines(1);
+    Sleep(2000);
+    CenterText("Bathed in silver moonlight, Horus stands");
+    CenterText("waiting atop a low sand dune.");
+    Sleep(2000);
+    BlankLines(1);
+    CenterText("His pale linen robe sways gently in the");
+    CenterText("soft desert breeze.");
+    Sleep(6000);
+
+    ClearScreen();
+    BlankLines(12);
+    SetColor(11);
+    CenterText("Horus");
+    CenterText("< It seems you've caught the attention >");
+    CenterText("< of quite a few gods tonight, " + playerName + ". >");
+    SetColor(7);
+    Sleep(6000);
+
+    ClearScreen();
+    BlankLines(12);
+    SetColor(6);
+    CenterText(" " + playerName + " ");
+    CenterText("< I don't understand why those two feel that way. >");
+    CenterText("< I'm just a lowly priest. >");
+    SetColor(7);
+    Sleep(4000);
+
+    ClearScreen();
+    BlankLines(8);
+    CenterText("A knowing smile crosses his beak.");
+    Sleep(2500);
+    BlankLines(1);
+    SetColor(11);
+    CenterText("Horus");
+    CenterText("< Oh " + playerName + ", you're so much more than that. >");
+    BlankLines(2);
+    Sleep(2500);
+    CenterText("< And who said it was just the two of them? >");
+    SetColor(7);
+    Sleep(6000);
+
+    ClearScreen();
+    BlankLines(12);
+    CenterText("You swallow hard before finally meeting");
+    CenterText("his warm, radiant gaze.");
+
+    int choice = 0;
+
+    while (choice < 1 || choice > 2)
+    {
+        ClearScreen();
+        BlankLines(9);
+
+        CenterText("How do you respond?");
+
+        BlankLines(2);
+        CenterText("1. Smile back.");
+        CenterText("2. Look down shyly.");
+
+        cout << endl;
+        cout << "                                   > ";
+        cin >> choice;
+
+        if (cin.fail())
+        {
+            cin.clear();
+            cin.ignore(10000, '\n');
+            choice = 0;
+        }
+
+        if (choice < 1 || choice > 2)
+        {
+            BlankLines(1);
+            CenterText("That is not a valid choice.");
+            Sleep(2000);
+        }
+    }
+
+    ClearScreen();
+
+    if (choice == 1)
+    {
+        confidence++;
+        horusaffection++;
+
+        BlankLines(10);
+
+        CenterText("A small smile finds its way onto your lips.");
+        CenterText("Horus' own smile widens ever so slightly.");
+
+        BlankLines(2);
+
+        SetColor(11);
+        CenterText("Horus");
+        CenterText("< There it is... I was hoping to see that smile. >");
+        SetColor(7);
+
+        Sleep(6000);
+    }
+    else
+    {
+        shyness++;
+        horusaffection++;
+
+        BlankLines(10);
+
+        CenterText("Your cheeks grow warm as you lower your gaze.");
+        CenterText("Unable to meet his eyes, you study the sand");
+        CenterText("beneath your feet.");
+
+        BlankLines(2);
+
+        SetColor(11);
+        CenterText("Horus");
+        CenterText("< There's no need to be embarrassed, " + playerName + ". >");
+        CenterText("< I find your modesty rather endearing. >");
+        SetColor(7);
+
+        Sleep(6000);
+    }
+
+    ClearScreen();
 
 
 }
