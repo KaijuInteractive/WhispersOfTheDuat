@@ -322,6 +322,8 @@ void TempleMainRoom()
 
         BlankLines(10);
 
+        SetColor(6);
+        CenterText(playerName);
         CenterText("\"Your eyes.\"");
 
         BlankLines(1);
@@ -338,6 +340,8 @@ void TempleMainRoom()
 
         BlankLines(10);
 
+        SetColor(6);
+        CenterText(playerName);
         CenterText("\"Y-your... um... your kilt.\"");
 
         BlankLines(1);
@@ -354,6 +358,8 @@ void TempleMainRoom()
 
         BlankLines(10);
 
+        SetColor(6);
+        CenterText(playerName);
         CenterText("\"Your physique... it's incredible.\"");
 
         BlankLines(1);
@@ -776,6 +782,8 @@ void OutsideRoom()
 
         BlankLines(10);
 
+        SetColor(6);
+        CenterText(playerName);
         CenterText("\"You... can stay if you want...\"");
 
         BlankLines(1);
@@ -801,6 +809,8 @@ void OutsideRoom()
 
         BlankLines(10);
 
+        SetColor(6);
+        CenterText(playerName);
         CenterText("\"Thank you for walking me home.\"");
 
         BlankLines(1);
