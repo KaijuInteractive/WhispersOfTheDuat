@@ -61,7 +61,7 @@ void ScarySobek();
 void SobekSex();
 void SobekRomance();
 void NileStory();
-void OhGodsAnother1();
+void ReSet();
 
 int main()
 {
@@ -71,7 +71,7 @@ int main()
 
     SobekSex();
     NileStory();
-    OhGodsAnother1();
+    ReSet();
 
     return 0;
 }
@@ -178,7 +178,7 @@ void DrawPyramid()
     for (int i = 0; i < pyramidRows; i++)
     {
         cout << pyramid[i] << endl;
-        Sleep(200);
+        Sleep(2000);
     }
 }
 
@@ -229,7 +229,7 @@ void TempleMainRoom()
     CenterText("???");
     CenterText("< Were you seeking me? >");
     SetColor(7);
-    Sleep(3000);
+    Sleep(4000);
     ClearScreen();
 
     BlankLines(7);
@@ -406,7 +406,7 @@ void TempleMainRoom()
     CenterText("< Come. >");
     SetColor(7);
 
-    Sleep(2000);
+    Sleep(3000);
     BlankLines(1);
     CenterText("Before you can question yourself your feet being to follow.");
     Sleep(5000);
@@ -600,10 +600,10 @@ void OutsideTemple()
         SetColor(12);
         CenterText("Anubis");
         CenterText("< ... >");
-        Sleep(1500);
+        Sleep(3000);
         CenterText("< Hmn. >");
         CenterText("< That... wasn't what I expected. >");
-        Sleep(1500);
+        Sleep(3000);
         CenterText("< ...You really are full of surprises. >");
         SetColor(7);
     }
@@ -835,13 +835,13 @@ void OutsideRoom()
     BlankLines(9);
 
     CenterText("He turns back and gives you a knowing look.");
-    Sleep(1500);
+    Sleep(3000);
     BlankLines(1);
 
     SetColor(12);
     CenterText("Anubis");
     CenterText("< Well... I suppose I could stay for a bit. >");
-    Sleep(1200);
+    Sleep(3000);
 
     CenterText("< Just until you've fallen asleep. >");
     SetColor(7);
@@ -852,7 +852,7 @@ void OutsideRoom()
     CenterText("you the briefest glimpse of the impressive bulge.");
     CenterText("hidden beneath.");
     BlankLines(2);
-    Sleep(2000);
+    Sleep(3000);
 
     CenterText("He pats the empty space beside him.");
     BlankLines(1);
@@ -921,7 +921,7 @@ void EnterSet()
     Sleep(2000);
 
     ClearScreen();
-    Sleep(1000);
+    Sleep(2000);
 
     BlankLines(12);
     SetColor(5);
@@ -931,7 +931,7 @@ void EnterSet()
     Sleep(3000);
     
     ClearScreen();
-    Sleep(1000);
+    Sleep(2000);
     BlankLines(8);
 
     CenterText("Anubis is jarred awake at the sound of");
@@ -1032,12 +1032,12 @@ void EnterSet()
     SetColor(5);
     CenterText("Set");
     CenterText("< I don't think that's the case at all. >");
-    Sleep(1500);
+    Sleep(3000);
     CenterText("< ... >");
-    Sleep(1500);
+    Sleep(3000);
     CenterText("< I sense much turmoil within the priest now. >");
     SetColor(7);
-    Sleep(4000);
+    Sleep(6000);
 
     BlankLines(2);
     SetColor(12);
@@ -1089,24 +1089,24 @@ void EnterSet()
     ClearScreen();
     BlankLines(8);
     CenterText("The room falls silent.");
-    Sleep(2500);
+    Sleep(3000);
 
     BlankLines(2);
 
     CenterText("Neither you nor Anubis speaks.");
-    Sleep(2500);
+    Sleep(3000);
 
     BlankLines(2);
 
     CenterText("Set's words linger in the air,");
     CenterText("refusing to fade.");
-    Sleep(3500);
+    Sleep(4000);
 
     ClearScreen();
     BlankLines(10);
 
     CenterText("For the first time since meeting Anubis...");
-    Sleep(2500);
+    Sleep(3000);
 
     BlankLines(2);
 
@@ -1339,38 +1339,38 @@ void AnotherGod()
     Sleep(3000);
     BlankLines(1);
     CenterText("His expression is impossible to read.");
-    Sleep(2500);
+    Sleep(3000);
     BlankLines(2);
     SetColor(11); 
     CenterText("Horus"); 
     CenterText("< ...So... >"); 
-    Sleep(2500); 
+    Sleep(3000); 
     CenterText("< I appear to have interrupted something. >"); 
     SetColor(7); 
-    Sleep(4000);
+    Sleep(6000);
 
 
     ClearScreen();
     BlankLines(6);
     CenterText("You open your mouth to speak,");
     CenterText("but no words come.");
-    Sleep(2500);
+    Sleep(3000);
     CenterText("Your face burns with embarrassment.");
     Sleep(2000);
     BlankLines(1);
     CenterText("You cannot bring yourself to meet his gaze.");
-    Sleep(2500);
+    Sleep(3000);
     BlankLines(2);
     SetColor(11);
     CenterText("Horus");
     CenterText("< There is no need to explain yourself. >");
-    Sleep(2500);
+    Sleep(3000);
     CenterText("< Desire is hardly foreign to the gods. >");
     SetColor(7);
-    Sleep(3500);
+    Sleep(4000);
     BlankLines(2);
     CenterText("A faint smile touches his lips.");
-    Sleep(4000);
+    Sleep(6000);
 
     ClearScreen();
     BlankLines(10);
@@ -2223,7 +2223,7 @@ void NileStory()
     Sleep(5000);
 }
 
-void OhGodsAnother1()
+void ReSet()
 {
 
     ClearScreen();
