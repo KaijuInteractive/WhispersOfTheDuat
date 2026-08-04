@@ -61,6 +61,7 @@ void ScarySobek();
 void SobekSex();
 void SobekRomance();
 void NileStory();
+void OhGodsAnother1();
 
 int main()
 {
@@ -70,6 +71,7 @@ int main()
 
     SobekSex();
     NileStory();
+    OhGodsAnother1();
 
     return 0;
 }
@@ -1678,9 +1680,473 @@ void NileWalk()
     Sleep(4000);
 }
 
+void ScarySobek()
+{
+    ClearScreen();
+    BlankLines(8);
+    CenterText("Warm afternoon sunlight dances across the Nile.");
+    Sleep(2500);
+
+    BlankLines(1);
+    CenterText("Papyrus reeds sway gently in the breeze.");
+    Sleep(2500);
+
+    BlankLines(1);
+    CenterText("The steady sound of flowing water begins");
+    CenterText("to quiet your restless mind.");
+    Sleep(3500);
+
+    BlankLines(1);
+    CenterText("Finding a quiet stretch of shoreline,");
+    CenterText("you lower yourself onto the warm sand.");
+    Sleep(4000);
+
+    ClearScreen();
+    BlankLines(8);
+    CenterText("For a long while...");
+    Sleep(2000);
+
+    BlankLines(1);
+    CenterText("There is only silence.");
+    Sleep(3000);
+
+    BlankLines(2);
+    CenterText("...");
+    Sleep(2500);
+
+    BlankLines(1);
+    CenterText("A ripple disturbs the calm surface of the river.");
+    Sleep(3500);
+
+    ClearScreen();
+    BlankLines(8);
+    CenterText("Your eyes narrow.");
+    Sleep(2000);
+
+    BlankLines(1);
+    CenterText("Another ripple.");
+    Sleep(2500);
+
+    BlankLines(1);
+    CenterText("Then another.");
+    Sleep(3000);
+
+    BlankLines(1);
+    CenterText("Something large is swimming toward the shore.");
+    Sleep(4000);
+
+    ClearScreen();
+    BlankLines(8);
+    CenterText("Your heart begins to pound.");
+    Sleep(2500);
+
+    BlankLines(1);
+    CenterText("A massive crocodile's head slowly rises");
+    CenterText("from the dark water.");
+    Sleep(3500);
+
+    BlankLines(1);
+    CenterText("Golden eyes lock onto yours.");
+    Sleep(3500);
+
+    BlankLines(1);
+    CenterText("It is coming straight toward you.");
+    Sleep(4000);
+
+    ClearScreen();
+    BlankLines(8);
+    CenterText("Every instinct tells you to run.");
+    Sleep(2500);
+
+    BlankLines(1);
+    CenterText("Yet your legs refuse to move.");
+    Sleep(3000);
+
+    BlankLines(1);
+    CenterText("You can only watch as the enormous beast");
+    CenterText("emerges from the Nile.");
+    Sleep(5000);
+
+    ClearScreen();
+    BlankLines(8);
+    CenterText("Water pours from emerald scales as the");
+    CenterText("towering crocodile steps onto the shore.");
+    Sleep(4000);
+
+    BlankLines(1);
+    CenterText("The creature studies you in silence.");
+    Sleep(3000);
+    BlankLines(2);
+    CenterText("Then...");
+    Sleep(3000);
+
+    ClearScreen();
+    BlankLines(10);
+    SetColor(10);
+    CenterText("???");
+    CenterText("< Relax, little priest. >");
+    Sleep(3000);
+    CenterText("< If I intended to eat you... >");
+    Sleep(3000);
+
+    BlankLines(1);
+    CenterText("< ...I wouldn't have announced my arrival. >");
+    SetColor(7);
+    Sleep(5000);
+
+    ClearScreen();
+    BlankLines(10);
+    CenterText("Recognition comes almost instantly.");
+    CenterText("There is no mistaking Sobek, the");
+    CenterText("crocodile-headed god.");
+    Sleep(3000);
+
+    BlankLines(1);
+    CenterText("Water streams from his broad, muscular");
+    CenterText("frame as he regards you with quiet amusement.");
+    Sleep(6000);
+    ClearScreen();
+
+    BlankLines(10);
+    SetColor(10);
+    CenterText("Sobek");
+    CenterText("< I haven't come for a snack. >");
+    Sleep(3000);
+    CenterText("< I've come to share a little wisdom. >");
+    SetColor(7);
+    Sleep(4000);
+
+    ClearScreen();
+    BlankLines(10);
+    CenterText("Sobek unceremoniously plops down onto");
+    CenterText("the warm sand beside you with a satisfied grunt.");
+    Sleep(3000);
+    BlankLines(1);
+    CenterText("For several long moments, he simply watches");
+    CenterText("the Nile drift lazily past.");
+    Sleep(4000);
+
+    int choice = 0;
+
+    while (choice < 1 || choice > 2)
+    {
+        ClearScreen();
+        BlankLines(8);
+
+        SetColor(10);
+        CenterText("Sobek");
+        CenterText("< Hmmm... >");
+        Sleep(3000);
+
+        BlankLines(1);
+        CenterText("< So tell me, " + playerName + "... >");
+        CenterText("< How does it feel to have the gods >");
+        CenterText("< vying for your favor? >");
+        SetColor(7);
+
+        BlankLines(2);
+
+        CenterText("1. I... I don't know.");
+        CenterText("2. I'd be lying if I said I disliked it.");
+
+        cout << endl;
+        cout << "                                   > ";
+        cin >> choice;
+
+        if (cin.fail())
+        {
+            cin.clear();
+            cin.ignore(10000, '\n');
+            choice = 0;
+        }
+
+        if (choice < 1 || choice > 2)
+        {
+            BlankLines(1);
+            CenterText("That is not a valid choice.");
+            Sleep(2000);
+        }
+    }
+
+    ClearScreen();
+
+    if (choice == 1)
+    {
+        shyness++;
+
+        BlankLines(10);
+
+        SetColor(6);
+        CenterText(playerName);
+        CenterText("< I... I don't know. >");
+        SetColor(7);
+        Sleep(3000);
+
+        BlankLines(1);
+
+        SetColor(10);
+        CenterText("Sobek");
+        CenterText("< A fair answer. >");
+        Sleep(2500);
+        CenterText("< Attention from the gods is no small >");
+        CenterText("< burden to carry. >");
+        SetColor(7);
+    }
+    else
+    {
+        confidence++;
+
+        BlankLines(10);
+
+        SetColor(6);
+        CenterText(playerName);
+        CenterText("< I'd be lying if I said I disliked it. >");
+        SetColor(7);
+        Sleep(3000);
+
+        BlankLines(1);
+
+        SetColor(10);
+        CenterText("Sobek");
+        CenterText("< Hah! There's the honesty I was hoping >");
+        CenterText("< to hear. >");
+        Sleep(3000);
+
+        BlankLines(1);
+
+        CenterText("< Too many mortals pretend they don't >");
+        CenterText("< enjoy being noticed. >");
+        SetColor(7);
+    }
+
+    Sleep(4000);
+
+    ClearScreen();
+    BlankLines(10);
+    SetColor(10);
+    CenterText("Sobek");
+    CenterText("< It is a big decision to make, little one. >");
+    CenterText("< Perhaps I should leave you to your thoughts. >");
+    SetColor(7);
+    Sleep(6000);
+
+    ClearScreen();
+    BlankLines(8);
+    CenterText("Sobek begins to rise, but you instinctively");
+    CenterText("reach out and take hold of his hand.");
+    Sleep(4000);
+
+    BlankLines(2);
+    SetColor(6);
+    CenterText(playerName);
+    CenterText("< Please stay with me... just a little longer. >");
+    SetColor(7);
+    Sleep(4000);
+
+    ClearScreen();
+    BlankLines(10);
+    CenterText("Sobek looks down at your hand wrapped");
+    CenterText("around his, visibly surprised.");
+    Sleep(4000);
+
+    BlankLines(1);
+    CenterText("His stern expression gradually softens.");
+    Sleep(3000);
+
+    BlankLines(2);
+    SetColor(10);
+    CenterText("Sobek");
+    CenterText("< Very well, little one. >");
+    Sleep(3000);
+    CenterText("< The Nile will not miss me for a few >");
+    CenterText("< moments longer. >");
+    SetColor(7);
+    Sleep(6000);
+
+    ClearScreen();
+    BlankLines(10);
+    CenterText("Sobek lifts you into his powerful arms");
+    CenterText("and gently settles you upon his lap.");
+    Sleep(6000);
+
+    ClearScreen();
+    BlankLines(10);
+    CenterText("As you lean back against Sobek's");
+    CenterText("broad chest, you notice a firm bulge");
+    CenterText("beneath the folds of his kilt.");
+    Sleep(6000);
+
+    ClearScreen();
+    BlankLines(10);
+    SetColor(10);
+    CenterText("Sobek");
+    CenterText("< So many gods seek your affection, >");
+    CenterText("< and yet here you are, sitting in my lap. >");
+    SetColor(7);
+    Sleep(4000);
+
+    BlankLines(2);
+    CenterText("One of his large hands comes to rest");
+    CenterText("against your bare stomach before");
+    CenterText("slowly gliding upward across your chest.");
+    Sleep(6000);
+
+}
+
+void SobekSex()
+{
+
+    ClearScreen();
+    BlankLines(8);
+    CenterText("A soft whimper escapes your lips at his");
+    CenterText("gentle touch. Gathering your courage,");
+    CenterText("you turn and straddle Sobek's lap.");
+    Sleep(4000);
+    BlankLines(2);
+    CenterText("For a long moment, neither of you");
+    CenterText("speaks. You simply gaze into his warm,");
+    CenterText("ancient eyes.");
+    Sleep(6000);
+
+    ClearScreen();
+    BlankLines(10);
+    SetColor(10);
+    CenterText("Sobek");
+    CenterText("< Be careful, little one. >");
+    CenterText("< Some choices cannot be undone. >");
+    CenterText("< Are you certain this is what you want? >");
+    SetColor(7);
+    Sleep(6000);
+
+    ClearScreen();
+    BlankLines(12);
+    CenterText("You pause for a long moment, thinking.");
+    Sleep(8000);
+
+    int choice = 0;
+
+    while (choice < 1 || choice > 2)
+    {
+        ClearScreen();
+        BlankLines(8);
+
+        SetColor(10);
+        CenterText("Sobek");
+        CenterText("< So what will it be, " + playerName + "? >");
+        CenterText("< What does your heart tell you? >");
+        SetColor(7);
+
+        BlankLines(2);
+
+        CenterText("1. Lean forward and kiss Sobek.");
+        CenterText("2. Say nothing.");
+
+        cout << endl;
+        cout << "                                   > ";
+        cin >> choice;
+
+        if (cin.fail())
+        {
+            cin.clear();
+            cin.ignore(10000, '\n');
+            choice = 0;
+        }
+
+        if (choice < 1 || choice > 2)
+        {
+            BlankLines(1);
+            CenterText("That is not a valid choice.");
+            Sleep(2000);
+        }
+    }
+
+    ClearScreen();
+
+    if (choice == 1)
+    {
+        sobekaffection += 5;
+
+        BlankLines(6);
+        CenterText("Your heart pounds within your chest.");
+        BlankLines(1);
+        CenterText("Slowly, you raise a trembling hand");
+        CenterText("to the side of Sobek's broad jaw.");
+        Sleep(4000);
+
+        BlankLines(2);
+        CenterText("He remains perfectly still, allowing");
+        CenterText("you to make the choice yourself.");
+        Sleep(4000);
+
+        BlankLines(2);
+        CenterText("As his great head lowers ever so");
+        CenterText("slightly, you close the remaining");
+        CenterText("distance and gently kiss him.");
+        Sleep(5000);
+
+        SobekRomance();
+    }
+    else
+    {
+        BlankLines(10);
+        CenterText("You take a slow breath and stare");
+        CenterText("quietly into Sobek's eyes.");
+        Sleep(4000);
+
+        BlankLines(2);
+
+        SetColor(10);
+        CenterText("Sobek");
+        CenterText("< There is no shame in waiting. >");
+        CenterText("< A choice made with certainty is >");
+        CenterText("< always the wiser one. >");
+        SetColor(7);
+        Sleep(6000);
+
+    }
+
+}
+
+void SobekRomance()
+{
+    ClearScreen();
+    BlankLines(10);
+    CenterText("As you pull back from the kiss, you feel");
+    CenterText("Sobek's massive bulge press warmly");
+    CenterText("against you.");
+    CenterText("A soft moan escapes your lips as your");
+    CenterText("cheeks flush a deep crimson.");
+    Sleep(6000);
+
+    ClearScreen();
+    BlankLines(8);
+    SetColor(10);
+    CenterText("Sobek");
+    CenterText("< Oh, " + playerName + "... >");
+    Sleep(3000);
+    CenterText("< As much as I want you right now... >");
+    CenterText("< It would not be fair to the others. >");
+    SetColor(7);
+    Sleep(6000);
+
+    BlankLines(2);
+    SetColor(10);
+    CenterText("Sobek");
+    CenterText("< I would never ask for your heart >");
+    CenterText("< in the heat of a single moment. >");
+    CenterText("< When the time comes... >");
+    CenterText("< I want you to know, beyond all doubt. >");
+    SetColor(7);
+    Sleep(8000);
+
+    NileStory();
+}
+
+
 void NileStory()
 {
     ClearScreen();
+    Sleep(2000);
     BlankLines(10);
     SetColor(10);
     CenterText("Sobek");
@@ -1745,6 +2211,16 @@ void NileStory()
     BlankLines(2);
     CenterText("Soon, only a trail of ripples remains.");
     Sleep(5000);
+}
+
+void OhGodsAnother1()
+{
+
+    ClearScreen();
+    BlankLines(10);
+    CenterText("You're left alone once again, basking in the");
+    CenterText("late afternoon sun on the edge of the Nile.");
+
 }
 
 
