@@ -62,6 +62,7 @@ void SobekSex();
 void SobekRomance();
 void NileStory();
 void ReSet();
+void HiddenMoment();
 
 int main()
 {
@@ -69,7 +70,7 @@ int main()
 
     playerName = "Kaiju";
 
-    ReSet();
+    HiddenMoment();
 
     return 0;
 }
@@ -2290,7 +2291,7 @@ void ReSet()
     CenterText("Set");
     CenterText("< Will you come with me, " + playerName + "? >");
     CenterText("< There is something I want to show you. >");
-    Sleep(4000);
+    Sleep(6000);
     SetColor(7);
 
     ClearScreen();
@@ -2300,7 +2301,167 @@ void ReSet()
     BlankLines(2);
     CenterText("The world around you begins to dissolve...");
     Sleep(6000);
+    ClearScreen();
 
 }
 
+void HiddenMoment()
+
+{
+    ClearScreen();
+    BlankLines(8);
+    CenterText("The warmth of the Nile fades away, replaced");
+    CenterText("by a gentle desert breeze.");
+    Sleep(5000);
+
+    BlankLines(2);
+    CenterText("You instinctively close your eyes as Set's");
+    CenterText("strong arms tighten securely around you.");
+    Sleep(5000);
+
+    ClearScreen();
+    BlankLines(10);
+    CenterText("When you open your eyes again...");
+    Sleep(3000);
+
+    BlankLines(2);
+    CenterText("...you find yourself standing within a");
+    CenterText("beautiful oasis.");
+    Sleep(5000);
+
+    ClearScreen();
+    BlankLines(8);
+    CenterText("Towering palm trees cast cool shadows over");
+    CenterText("soft, emerald grass.");
+    Sleep(4000);
+
+    BlankLines(2);
+    CenterText("At their center rests a shimmering pool of");
+    CenterText("deep blue water, untouched by the desert heat.");
+    Sleep(6000);
+
+    ClearScreen();
+    BlankLines(10);
+    CenterText("It takes you a moment to realize that you're");
+    CenterText("still being held safely in Set's strong arms.");
+    Sleep(4000);
+
+    ClearScreen();
+    BlankLines(10);
+    CenterText("A confident grin spreads across his face");
+    CenterText("as he gently lets you go.");
+    Sleep(5000);
+
+    ClearScreen();
+    BlankLines(8);
+    SetColor(5);
+    CenterText("Set");
+    CenterText("< Welcome to my private oasis. >");
+    Sleep(4000);
+
+    BlankLines(1);
+    CenterText("< Somewhere the other gods won't bother us. >");
+    Sleep(5000);
+    BlankLines(1);
+    CenterText("< Even the God of Chaos needs a break sometimes. >");
+    SetColor(7);
+    Sleep(6000);
+
+    ClearScreen();
+    BlankLines(10);
+    CenterText("Set takes your hand in his and leads you");
+    CenterText("toward a shaded spot beneath the palm trees.");
+    Sleep(4000);
+    BlankLines(1);
+    CenterText("You notice a blanket spread out on the ground");
+    CenterText("covered in the softest pillows you've ever seen.");
+    Sleep(6000);
+
+    ClearScreen();
+    BlankLines(10);
+    SetColor(5);
+    CenterText("Set");
+    CenterText("< I thought we could relax here and talk a bit. >");
+    CenterText("< Please, take a seat. >");
+    SetColor(7);
+    Sleep(5000);
+
+    ClearScreen();
+    BlankLines(8);
+    CenterText("You settle onto one of the large, impossibly");
+    CenterText("soft pillows.");
+    Sleep(3000);
+
+    BlankLines(1);
+    CenterText("Set sits beside you, leaning back comfortably");
+    CenterText("against another pillow.");
+    Sleep(3000);
+
+    BlankLines(1);
+    CenterText("The casual pose draws your attention to the");
+    CenterText("well-defined muscles of his chest and abdomen.");
+    Sleep(6000);
+
+    ClearScreen();
+    BlankLines(10);
+    CenterText("He catches you looking and grins.");
+    BlankLines(2);
+    SetColor(5);
+    CenterText("Set");
+    CenterText("< See something you like? >");
+    SetColor(7);
+    Sleep(6000);
+    BlankLines(2);
+    CenterText("Your face grows warm as you quickly avert");
+    CenterText("your eyes.");
+    Sleep(4000);
+
+    ClearScreen();
+    BlankLines(8);
+    CenterText("Set leans back and stretches even more,");
+    CenterText("flexing as he places his hands behind his head.");
+    BlankLines(2);
+    Sleep(4000);
+    CenterText("...Is he doing this on purpose?");
+    Sleep(2000);
+    BlankLines(2);
+    SetColor(5);
+    CenterText("Set");
+    CenterText("< Please, continue to look if you wish. >");
+    SetColor(7);
+    Sleep(6000);
+
+    ClearScreen();
+    BlankLines(8);
+    CenterText("Set pats the spot next to him playfully.");
+    BlankLines(2);
+    SetColor(5);
+    CenterText("Set");
+    CenterText("< You can come closer if you like. >");
+    CenterText("< I don't bite, hard... >");
+    SetColor(7);
+    Sleep(6000);
+
+    ClearScreen();
+    BlankLines(8);
+    CenterText("You move closer.");
+    CenterText("He pulls you in and wraps his arms around you.");
+    Sleep(4000);
+    BlankLines(2);
+    CenterText("You sigh contentedly and rest your head on his chest.");
+    Sleep(4000);
+
+    ClearScreen();
+    BlankLines(10);
+    SetColor(5);
+    CenterText("Set");
+    CenterText("< " + playerName + "... >");
+    Sleep(2000);
+    CenterText("< I like having you close. >");
+    Sleep(3000);
+    CenterText("< I'm glad you're here with me. >");
+    SetColor(7);
+    Sleep(5000);
+
+}
 
