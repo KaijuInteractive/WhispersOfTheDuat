@@ -69,8 +69,6 @@ int main()
 
     playerName = "Kaiju";
 
-    SobekSex();
-    NileStory();
     ReSet();
 
     return 0;
@@ -2227,9 +2225,81 @@ void ReSet()
 {
 
     ClearScreen();
-    BlankLines(10);
+    BlankLines(6);
     CenterText("You're left alone once again, basking in the");
     CenterText("late afternoon sun on the edge of the Nile.");
+    Sleep(4000);
+    BlankLines(2);
+    CenterText("Just as you're about to head home, you hear a");
+    CenterText("familiar voice and stop.");
+    Sleep(5000);
+    BlankLines(2);
+    CenterText("Set steps casually from behind a nearby");
+    CenterText("cluster of papyrus reeds, wearing his");
+    CenterText("usual confident grin.");
+    Sleep(5000);
+
+    ClearScreen();
+    BlankLines(10);
+    SetColor(5);
+    CenterText("Set");
+    CenterText("< Finally, you're alone. I thought that oversized >");
+    CenterText("< pond puppy would never leave... >");
+    SetColor(7);
+    Sleep(4000);
+
+    ClearScreen();
+    BlankLines(10);
+    SetColor(5);
+    CenterText("Set");
+    CenterText("< I was watching and waiting. >");
+    CenterText("< I can't believe Scalebrain got to kiss you before I did... >");
+    SetColor(7);
+    Sleep(4000);
+
+    ClearScreen();
+    BlankLines(10);
+    CenterText("Set steps closer, his confident grin softening.");
+    Sleep(4000);
+    CenterText("Without another word he pulls you into a close embrace.");
+    Sleep(4000);
+    BlankLines(2);
+    SetColor(5);
+    CenterText("Set");
+    CenterText("< We'll have to fix that immediately... >");
+    SetColor(7);
+    Sleep(4000);
+
+    ClearScreen();
+    BlankLines(10);
+    CenterText("He leans his head down and kisses you deeply.");
+    CenterText("You moan softly as you feel his tongue slide");
+    CenterText("into your waiting mouth.");
+    Sleep(4000);
+    BlankLines(2);
+    CenterText("Instinctively, you wrap your arms around him");
+    CenterText("as his own rub gently up and down your back.");
+    Sleep(8000);
+
+    ClearScreen();
+    BlankLines(10);
+    CenterText("Set pulls back from the kiss, still holding you close.");
+    BlankLines(2);
+    Sleep(2000);
+    SetColor(5);
+    CenterText("Set");
+    CenterText("< Will you come with me, " + playerName + "? >");
+    CenterText("< There is something I want to show you. >");
+    Sleep(4000);
+    SetColor(7);
+
+    ClearScreen();
+    BlankLines(10);
+    CenterText("You nod.");
+    Sleep(3000);
+    BlankLines(2);
+    CenterText("The world around you begins to dissolve...");
+    Sleep(6000);
 
 }
 
