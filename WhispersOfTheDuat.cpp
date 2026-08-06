@@ -64,6 +64,9 @@ void NileStory();
 void ReSet();
 void HiddenMoment();
 void LapChoice();
+void ContinueOasis();
+void SetHighAffection();
+void SetLowAffection();
 
 int main()
 {
@@ -73,6 +76,9 @@ int main()
 
     HiddenMoment();
     LapChoice();
+    ContinueOasis();
+    SetHighAffection();
+    SetLowAffection();
 
     return 0;
 }
@@ -2468,12 +2474,15 @@ void HiddenMoment()
 
     ClearScreen();
     BlankLines(10);
-    CenterText("You cuddle in silence, just enjoying each other.");
+    CenterText("You cuddle in silence, simply enjoying");
+    CenterText("each other's company.");
     Sleep(6000);
 
     ClearScreen();
     BlankLines(6);
     CenterText("After a while, Set breaks the silence.");
+    Sleep(3000);
+    BlankLines(2);
     SetColor(5);
     CenterText("Set");
     CenterText("< " + playerName + ", I have a confession to make... >");
@@ -2494,6 +2503,8 @@ void HiddenMoment()
     CenterText("< I... want to feel as close to you as he did. >");
     SetColor(7);
     Sleep(6000);
+
+    LapChoice();
 
 }
 
@@ -2555,9 +2566,9 @@ void LapChoice()
         CenterText("Set");
         CenterText("< Thank you... >");
         Sleep(3000);
-
-        CenterText("< I was beginning to think I'd lost to >");
-        CenterText("< that log-headed dummy. >");
+        BlankLines(2);
+        CenterText("< I was beginning to think that >");
+        CenterText("< log-headed dummy had won you over. >");
         SetColor(7);
         Sleep(5000);
     }
@@ -2571,8 +2582,8 @@ void LapChoice()
         BlankLines(2);
         SetColor(6);
         CenterText(playerName);
-        CenterText("I'd rather stay here beside you... if");
-        CenterText("that's alright.");
+        CenterText("< I'd rather stay here beside you... if >");
+        CenterText("< that's alright. >");
         SetColor(7);
         Sleep(5000);
 
@@ -2595,6 +2606,35 @@ void LapChoice()
         SetColor(7);
         Sleep(5000);
     }
+    ContinueOasis();
+}
+
+void ContinueOasis()
+{
+
+    if (setaffection >= 5)
+    {
+        SetHighAffection();
+    }
+    else
+    {
+        SetLowAffection();
+    }
 
 }
 
+void SetHighAffection()
+{
+
+    /// Set sex scene
+
+}
+
+void SetLowAffection()
+{
+
+    /// Set friendlier scene
+
+}
+
+/// Create scene with smooth transition for either choice and continue to next scene. 
