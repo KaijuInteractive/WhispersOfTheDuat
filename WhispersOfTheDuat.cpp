@@ -63,6 +63,7 @@ void SobekRomance();
 void NileStory();
 void ReSet();
 void HiddenMoment();
+void LapChoice();
 
 int main()
 {
@@ -71,6 +72,7 @@ int main()
     playerName = "Kaiju";
 
     HiddenMoment();
+    LapChoice();
 
     return 0;
 }
@@ -2448,7 +2450,8 @@ void HiddenMoment()
     CenterText("He pulls you in and wraps his arms around you.");
     Sleep(4000);
     BlankLines(2);
-    CenterText("You sigh contentedly and rest your head on his chest.");
+    CenterText("You sigh contentedly and rest your head");
+    CenterText("against his chest as you sit beside him.");
     Sleep(4000);
 
     ClearScreen();
@@ -2462,6 +2465,136 @@ void HiddenMoment()
     CenterText("< I'm glad you're here with me. >");
     SetColor(7);
     Sleep(5000);
+
+    ClearScreen();
+    BlankLines(10);
+    CenterText("You cuddle in silence, just enjoying each other.");
+    Sleep(6000);
+
+    ClearScreen();
+    BlankLines(6);
+    CenterText("After a while, Set breaks the silence.");
+    SetColor(5);
+    CenterText("Set");
+    CenterText("< " + playerName + ", I have a confession to make... >");
+    BlankLines(2);
+    Sleep(3000);
+    CenterText("< Earlier, when I said I wasn't jealous... >");
+    Sleep(3000);
+    CenterText("< I lied. >");
+    BlankLines(2);
+    Sleep(4000);
+    CenterText("< Watching you sit in Sobek's lap... >");
+    Sleep(4000);
+    CenterText("< I wished it had been mine instead. >");
+    BlankLines(2);
+    Sleep(4000);
+    CenterText("< Would you sit with me? >");
+    Sleep(3000);
+    CenterText("< I... want to feel as close to you as he did. >");
+    SetColor(7);
+    Sleep(6000);
+
+}
+
+void LapChoice()
+{
+
+    int choice = 0;
+
+    while (choice < 1 || choice > 2)
+    {
+        ClearScreen();
+        BlankLines(10);
+
+        CenterText("1. Sit on Set's lap.");
+        CenterText("2. Gently decline.");
+
+        cout << endl;
+        cout << "                                   > ";
+        cin >> choice;
+
+        if (cin.fail())
+        {
+            cin.clear();
+            cin.ignore(10000, '\n');
+            choice = 0;
+        }
+
+        if (choice < 1 || choice > 2)
+        {
+            BlankLines(1);
+            CenterText("That is not a valid choice.");
+            Sleep(2000);
+        }
+    }
+
+    if (choice == 1)
+    {
+        setaffection += 2;
+
+        ClearScreen();
+        BlankLines(10);
+        CenterText("A small smile spreads across your face.");
+        Sleep(3000);
+
+        BlankLines(2);
+        CenterText("Without another word, you carefully settle");
+        CenterText("onto Set's lap.");
+        Sleep(4000);
+
+        BlankLines(2);
+        CenterText("His arms wrap gently around your waist,");
+        CenterText("holding you close.");
+        Sleep(5000);
+
+        ClearScreen();
+        BlankLines(10);
+
+        SetColor(5);
+        CenterText("Set");
+        CenterText("< Thank you... >");
+        Sleep(3000);
+
+        CenterText("< I was beginning to think I'd lost to >");
+        CenterText("< that log-headed dummy. >");
+        SetColor(7);
+        Sleep(5000);
+    }
+    else
+    {
+        ClearScreen();
+        BlankLines(10);
+        CenterText("You offer Set an apologetic smile.");
+        Sleep(3000);
+
+        BlankLines(2);
+        SetColor(6);
+        CenterText(playerName);
+        CenterText("I'd rather stay here beside you... if");
+        CenterText("that's alright.");
+        SetColor(7);
+        Sleep(5000);
+
+        ClearScreen();
+        BlankLines(10);
+
+        SetColor(5);
+        CenterText("Set");
+        CenterText("< ...Heh. >");
+        Sleep(3000);
+
+        CenterText("< I'd be lying if I said I wasn't >");
+        CenterText("< disappointed. >");
+        Sleep(4000);
+
+        CenterText("< But I'd never force you. >");
+        Sleep(3000);
+
+        CenterText("< Just staying here with me is enough. >");
+        SetColor(7);
+        Sleep(5000);
+    }
 
 }
 
