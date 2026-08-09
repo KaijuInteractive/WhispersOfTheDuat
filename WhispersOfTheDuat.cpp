@@ -67,6 +67,7 @@ void LapChoice();
 void ContinueOasis();
 void SetHighAffection();
 void SetLowAffection();
+void DrawSetOasis();
 
 int main()
 {
@@ -75,10 +76,6 @@ int main()
     playerName = "Kaiju";
 
     HiddenMoment();
-    LapChoice();
-    ContinueOasis();
-    SetHighAffection();
-    SetLowAffection();
 
     return 0;
 }
@@ -95,6 +92,44 @@ void BlankLines(int lines)
 void SetColor(int color)
 {
     SetConsoleTextAttribute(hConsole, color);
+}
+
+void DrawSetOasis()
+{
+    ClearScreen();
+
+    SetColor(10); // green - palm leaves
+    CenterText("        __..---..___                           ___..---..__");
+    CenterText("   _.-''           ``-._                   _.-''           ``-._");
+    CenterText(".-'      _..---.._      `-.             .-'      _..---.._      `-.");
+    CenterText(" `--..--'    \\    `--..--'               `--..--'    /    `--..--'");
+
+    SetColor(6); // brown/yellow-ish - trunks
+    CenterText("              \\\\                                    //");
+    CenterText("               \\\\                                  //");
+    CenterText("               ||                                  ||");
+    CenterText("              //                                    \\\\");
+    CenterText("             //                                      \\\\");
+    CenterText("            ||                                        ||");
+    CenterText("           //                                          \\\\");
+
+    SetColor(10); // green - reeds
+    CenterText("      ||  //        ||   ||                    ||       \\\\  ||");
+    CenterText("     \\||/||        \\||/ \\||/                  \\||/       ||\\||/");
+    CenterText("      || ||         ||   ||                    ||        || ||");
+
+    SetColor(6); // shoreline
+    CenterText("   ___||_||_________||___||____________________||________||_||___");
+
+    SetColor(11); // cyan - water
+    CenterText("");
+    CenterText("          ~~~~~~       ~~~~~~~~~~~~~~~~~       ~~~~~~");
+    CenterText("      ~~~~~~~~~~~~  ~~~~~~~~~~~~~~~~~~~~~~~  ~~~~~~~~~~~~");
+    CenterText("   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+    CenterText("      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+    CenterText("           ~~~~~~~~~~    ~~~~~~~~~~~    ~~~~~~~~~~");
+
+    SetColor(7); // restore default
 }
 
 void AskPlayerName()
@@ -2316,6 +2351,9 @@ void ReSet()
 void HiddenMoment()
 
 {
+    DrawSetOasis();
+    Sleep(8000);
+
     ClearScreen();
     BlankLines(8);
     CenterText("The warmth of the Nile fades away, replaced");
