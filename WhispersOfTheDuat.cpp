@@ -68,6 +68,7 @@ void ContinueOasis();
 void SetHighAffection();
 void SetLowAffection();
 void DrawSetOasis();
+void BackHome();
 
 int main()
 {
@@ -76,6 +77,7 @@ int main()
     playerName = "Kaiju";
 
     HiddenMoment();
+    BackHome();
 
     return 0;
 }
@@ -2531,7 +2533,7 @@ void HiddenMoment()
     CenterText("< I lied. >");
     BlankLines(2);
     Sleep(4000);
-    CenterText("< Watching you sit in Sobek's lap... >");
+    CenterText("< Watching you sit on Sobek's lap... >");
     Sleep(4000);
     CenterText("< I wished it had been mine instead. >");
     BlankLines(2);
@@ -2824,7 +2826,7 @@ void SetLowAffection()
     Sleep(3000);
 
     ClearScreen();
-    BlankLines(8);
+    BlankLines(10);
     CenterText("Set lets out a low, almost sad sigh.");
     BlankLines(2);
 
@@ -2836,8 +2838,8 @@ void SetLowAffection()
     Sleep(5000);
 
     ClearScreen();
-    BlankLines(9);
-    CenterText("You glance up at Set.");
+    BlankLines(8);
+    CenterText("You glance up at him.");
     CenterText("For once, his usual mischievous grin is gone.");
     Sleep(4000);
 
@@ -2851,7 +2853,7 @@ void SetLowAffection()
     Sleep(5000);
 
     ClearScreen();
-    BlankLines(9);
+    BlankLines(8);
     CenterText("Set rises from the pillow and offers you his hand.");
     CenterText("You take it, and he gently pulls you to your feet.");
     Sleep(4000);
@@ -2875,4 +2877,37 @@ void SetLowAffection()
     Sleep(4000);
 }
 
-/// Create scene with smooth transition for either choice and continue to next scene. 
+void BackHome()
+{
+    ClearScreen();
+    BlankLines(10);
+    CenterText("You blink, and in an instant you're back in your");
+    CenterText("room. The sun has long since set.");
+    Sleep(4000);
+
+    BlankLines(2);
+    CenterText("Perhaps you were gone longer than you thought.");
+    Sleep(4000);
+
+    ClearScreen();
+    BlankLines(10);
+    CenterText("You think back on the crazy day you've had.");
+    Sleep(2000);
+    CenterText("Visions of Sobek and Set play in your mind.");
+    Sleep(3000);
+
+    CenterText("You realize how tired you are as you begin to strip");
+    CenterText("and lie down on your mat.");
+    Sleep(4000);
+
+    ClearScreen();
+    BlankLines(10);
+    CenterText("The room is quiet, save for the distant sounds");
+    CenterText("of the city beyond your walls.");
+    Sleep(4000);
+
+    ClearScreen();
+    BlankLines(10);
+    CenterText("Your eyes grow heavy.");
+    Sleep(9000);
+}
