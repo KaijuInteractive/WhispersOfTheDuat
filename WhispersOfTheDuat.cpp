@@ -2449,7 +2449,7 @@ void HiddenMoment()
     Sleep(6000);
 
     ClearScreen();
-    BlankLines(10);
+    BlankLines(8);
     CenterText("He catches you looking and grins.");
     BlankLines(2);
     SetColor(5);
@@ -2517,7 +2517,7 @@ void HiddenMoment()
     Sleep(6000);
 
     ClearScreen();
-    BlankLines(6);
+    BlankLines(4);
     CenterText("After a while, Set breaks the silence.");
     Sleep(3000);
     BlankLines(2);
@@ -2650,7 +2650,7 @@ void LapChoice()
 void ContinueOasis()
 {
 
-    if (setaffection >= 5)
+    if (setaffection >= 4)
     {
         SetHighAffection();
     }
@@ -2663,16 +2663,216 @@ void ContinueOasis()
 
 void SetHighAffection()
 {
+    ClearScreen();
+    BlankLines(8);
+    CenterText("As you sit on Set's lap, you turn to face him.");
+    CenterText("For a moment, you simply stare into his eyes.");
+    Sleep(4000);
 
-    /// Set sex scene
+    BlankLines(2);
+    CenterText("Then, gathering your courage, you lean forward");
+    CenterText("and press your lips against his.");
+    Sleep(4000);
 
+    ClearScreen();
+    BlankLines(8);
+    CenterText("A soft moan escapes your lips as Set");
+    CenterText("pulls you closer against his body.");
+    Sleep(4000);
+
+    CenterText("You feel the thick bulge growing");
+    CenterText("beneath his loincloth.");
+    Sleep(4000);
+
+    BlankLines(2);
+    SetColor(5);
+    CenterText("Set");
+    CenterText("< Well, well... >");
+    Sleep(2000);
+    CenterText("< And here I thought you were shy. >");
+    SetColor(7);
+    Sleep(4000);
+
+    ClearScreen();
+    BlankLines(10);
+    CenterText("You say nothing.");
+    Sleep(2000);
+
+    CenterText("Instead, you begin grinding your");
+    CenterText("own aching bulge against that of the god.");
+    Sleep(6000);
+
+    ClearScreen();
+    BlankLines(8);
+    CenterText("Set's teasing expression immediately falters.");
+    CenterText("His arms tighten around you.");
+    Sleep(4000);
+
+    BlankLines(2);
+    SetColor(5);
+    CenterText("Set");
+    CenterText("< Oh... >");
+    Sleep(2000);
+    CenterText("< So that's how we're going to play this? >");
+    SetColor(7);
+    Sleep(6000);
+
+    ClearScreen();
+    BlankLines(8);
+    CenterText("For a moment, Set seems ready to lose himself");
+    CenterText("in you completely.");
+    Sleep(4000);
+
+    BlankLines(2);
+    CenterText("Then, unexpectedly, his hands become still.");
+    Sleep(4000);
+
+    SetColor(5);
+    CenterText("Set");
+    CenterText("< No. >");
+    SetColor(7);
+    Sleep(4000);
+
+    ClearScreen();
+    BlankLines(8);
+    CenterText("You pull back, confused.");
+    Sleep(4000);
+
+    BlankLines(2);
+    SetColor(5);
+    CenterText("Set");
+    CenterText("< Don't give me that look. >");
+    Sleep(2000);
+    CenterText("< I want you. More than you realize. >");
+    Sleep(4000);
+    CenterText("< But not like this. Not yet. >");
+    SetColor(7);
+    Sleep(6000);
+
+    ClearScreen();
+    BlankLines(8);
+    CenterText("Set gently brushes a hand across your cheek.");
+    CenterText("The familiar mischief slowly returns to his eyes.");
+    Sleep(4000);
+
+    BlankLines(2);
+    SetColor(5);
+    CenterText("Set");
+    CenterText("< When I finally have your heart, little priest... >");
+    Sleep(4000);
+    CenterText("< I want to know you chose to give it to me. >");
+    SetColor(7);
+    Sleep(6000);
+
+    ClearScreen();
+    BlankLines(10);
+    SetColor(5);
+    CenterText("Set");
+    CenterText("< You still need to see the others. >");
+    Sleep(4000);
+    CenterText("< Speak with them. Spend time with them. >");
+    Sleep(4000);
+    CenterText("< Then decide which of us you truly want. >");
+    SetColor(7);
+    Sleep(6000);
+
+    ClearScreen();
+    BlankLines(8);
+    CenterText("A crooked smile slowly returns to Set's face.");
+    Sleep(2500);
+
+    BlankLines(2);
+    SetColor(5);
+    CenterText("Set");
+    CenterText("< And once you finally pick me... >");
+    Sleep(4000);
+    CenterText("< I'll try not to look too smug. >");
+    SetColor(7);
+    Sleep(6000);
+
+    ClearScreen();
+    BlankLines(9);
+    CenterText("Set rises from the pillow and offers you his hand.");
+    CenterText("You take it, and he gently pulls you to your feet.");
+    Sleep(4000);
+
+    BlankLines(2);
+    SetColor(5);
+    CenterText("Set");
+    CenterText("< I should get you home now. >");
+    CenterText("< I have a feeling the others will be looking for you. >");
+    SetColor(7);
+    Sleep(5000);
+
+    ClearScreen();
+    BlankLines(10);
+    CenterText("You take one last look across the quiet oasis.");
+    CenterText("Set's hand remains wrapped around yours.");
+    Sleep(4000);
+
+    BlankLines(2);
+    CenterText("Then, in an instant, the oasis disappears.");
+    Sleep(4000);
 }
 
 void SetLowAffection()
 {
+    ClearScreen();
+    BlankLines(10);
+    CenterText("You continue to lie with Set as the evening sun");
+    CenterText("begins to hang low on the horizon.");
+    Sleep(3000);
 
-    /// Set friendlier scene
+    ClearScreen();
+    BlankLines(8);
+    CenterText("Set lets out a low, almost sad sigh.");
+    BlankLines(2);
 
+    SetColor(5);
+    CenterText("Set");
+    CenterText("< I suppose I should be getting you back soon. >");
+    CenterText("< As much as I'd rather keep you here all to myself. >");
+    SetColor(7);
+    Sleep(5000);
+
+    ClearScreen();
+    BlankLines(9);
+    CenterText("You glance up at Set.");
+    CenterText("For once, his usual mischievous grin is gone.");
+    Sleep(4000);
+
+    BlankLines(2);
+    SetColor(5);
+    CenterText("Set");
+    CenterText("< Don't look at me like that. >");
+    Sleep(2000);
+    CenterText("< Even gods can be disappointed. >");
+    SetColor(7);
+    Sleep(5000);
+
+    ClearScreen();
+    BlankLines(9);
+    CenterText("Set rises from the pillow and offers you his hand.");
+    CenterText("You take it, and he gently pulls you to your feet.");
+    Sleep(4000);
+
+    BlankLines(2);
+    SetColor(5);
+    CenterText("Set");
+    CenterText("< Come, little priest. >");
+    CenterText("< Let's get you home before someone notices. >");
+    SetColor(7);
+    Sleep(5000);
+
+    ClearScreen();
+    BlankLines(10);
+    CenterText("You take one last look across the quiet oasis.");
+    CenterText("Set's hand remains wrapped around yours.");
+    Sleep(4000);
+
+    BlankLines(2);
+    CenterText("Then, in an instant, the oasis disappears.");
+    Sleep(4000);
 }
 
 /// Create scene with smooth transition for either choice and continue to next scene. 
