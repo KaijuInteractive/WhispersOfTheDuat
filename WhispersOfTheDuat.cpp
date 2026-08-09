@@ -76,7 +76,6 @@ int main()
 
     playerName = "Kaiju";
 
-    HiddenMoment();
     BackHome();
 
     return 0;
@@ -2911,3 +2910,5 @@ void BackHome()
     CenterText("Your eyes grow heavy.");
     Sleep(9000);
 }
+
+
