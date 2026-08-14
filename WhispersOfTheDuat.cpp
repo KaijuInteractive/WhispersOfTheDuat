@@ -73,10 +73,25 @@ void BackHome();
 int main()
 {
     SetupConsole();
+    Intro();
+    ClearScreen();
+    AskPlayerName();
 
-    playerName = "Kaiju";
-
-    BackHome();
+    TempleMainRoom();
+    OutsideTemple();
+    OutsideRoom();
+    InsideRoom();
+    EnterSet();
+    AnubisDeparts();
+    Alone();
+    AnotherGod();
+    HorusOutside();
+    NileWalk();
+    ScarySobek();
+    SobekSex();
+    NileStory();
+    ReSet();
+    HiddenMoment();
 
     return 0;
 }
@@ -99,13 +114,13 @@ void DrawSetOasis()
 {
     ClearScreen();
 
-    SetColor(10); // green - palm leaves
+    SetColor(10); 
     CenterText("        __..---..___                           ___..---..__");
     CenterText("   _.-''           ``-._                   _.-''           ``-._");
     CenterText(".-'      _..---.._      `-.             .-'      _..---.._      `-.");
     CenterText(" `--..--'    \\    `--..--'               `--..--'    /    `--..--'");
 
-    SetColor(6); // brown/yellow-ish - trunks
+    SetColor(6); 
     CenterText("              \\\\                                    //");
     CenterText("               \\\\                                  //");
     CenterText("               ||                                  ||");
@@ -114,15 +129,15 @@ void DrawSetOasis()
     CenterText("            ||                                        ||");
     CenterText("           //                                          \\\\");
 
-    SetColor(10); // green - reeds
+    SetColor(10); 
     CenterText("      ||  //        ||   ||                    ||       \\\\  ||");
     CenterText("     \\||/||        \\||/ \\||/                  \\||/       ||\\||/");
     CenterText("      || ||         ||   ||                    ||        || ||");
 
-    SetColor(6); // shoreline
+    SetColor(6); 
     CenterText("   ___||_||_________||___||____________________||________||_||___");
 
-    SetColor(11); // cyan - water
+    SetColor(11); 
     CenterText("");
     CenterText("          ~~~~~~       ~~~~~~~~~~~~~~~~~       ~~~~~~");
     CenterText("      ~~~~~~~~~~~~  ~~~~~~~~~~~~~~~~~~~~~~~  ~~~~~~~~~~~~");
@@ -130,7 +145,7 @@ void DrawSetOasis()
     CenterText("      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
     CenterText("           ~~~~~~~~~~    ~~~~~~~~~~~    ~~~~~~~~~~");
 
-    SetColor(7); // restore default
+    SetColor(7); 
 }
 
 void AskPlayerName()
@@ -221,7 +236,6 @@ void DrawPyramid()
     for (int i = 0; i < pyramidRows; i++)
     {
         cout << pyramid[i] << endl;
-        Sleep(2000);
     }
 }
 
@@ -451,7 +465,7 @@ void TempleMainRoom()
 
     Sleep(3000);
     BlankLines(1);
-    CenterText("Before you can question yourself your feet being to follow.");
+    CenterText("Before you can question yourself your feet begin to follow.");
     Sleep(5000);
 }
 
@@ -495,7 +509,7 @@ void OutsideTemple()
         BlankLines(2);
 
         CenterText("1. Just to talk.");
-        CenterText("2. To devote myself to you, completely.");
+        CenterText("2. To devote myself to you, completeley.");
         CenterText("3. I... I didn't...");
 
         cout << endl;
@@ -2581,7 +2595,7 @@ void LapChoice()
 
     if (choice == 1)
     {
-        setaffection += 2;
+        setaffection += 5;
 
         ClearScreen();
         BlankLines(10);
@@ -2651,7 +2665,7 @@ void LapChoice()
 void ContinueOasis()
 {
 
-    if (setaffection >= 4)
+    if (setaffection >= 5)
     {
         SetHighAffection();
     }
