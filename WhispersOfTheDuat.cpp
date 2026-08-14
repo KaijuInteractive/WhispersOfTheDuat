@@ -69,29 +69,16 @@ void SetHighAffection();
 void SetLowAffection();
 void DrawSetOasis();
 void BackHome();
+void NextDay();
 
 int main()
 {
     SetupConsole();
-    Intro();
-    ClearScreen();
-    AskPlayerName();
 
-    TempleMainRoom();
-    OutsideTemple();
-    OutsideRoom();
-    InsideRoom();
-    EnterSet();
-    AnubisDeparts();
-    Alone();
-    AnotherGod();
-    HorusOutside();
-    NileWalk();
-    ScarySobek();
-    SobekSex();
-    NileStory();
-    ReSet();
-    HiddenMoment();
+    playerName = "Kaiju";
+
+    BackHome();
+    NextDay();
 
     return 0;
 }
@@ -2366,6 +2353,7 @@ void ReSet()
 void HiddenMoment()
 
 {
+    BlankLines(2);
     DrawSetOasis();
     Sleep(8000);
 
@@ -2742,6 +2730,7 @@ void SetHighAffection()
     CenterText("Then, unexpectedly, his hands become still.");
     Sleep(4000);
 
+    BlankLines(1);
     SetColor(5);
     CenterText("Set");
     CenterText("< No. >");
@@ -2920,9 +2909,17 @@ void BackHome()
     Sleep(4000);
 
     ClearScreen();
-    BlankLines(10);
+    BlankLines(12);
     CenterText("Your eyes grow heavy.");
     Sleep(9000);
 }
 
+void NextDay()
+{
 
+    ClearScreen();
+    BlankLines(12);
+    CenterText("The Next Day...");
+    Sleep(6000);
+
+}
