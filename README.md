@@ -46,6 +46,16 @@ Each romanceable character also has an independent affection value, allowing cho
 - Ancient Egyptian setting
 - Built entirely in C++
 
+## 📸 Screenshots
+
+![Whispers of the Duat title screen](whispers-title.png)
+
+*Enter the Duat.*
+
+![Anubis dialogue](whispers-anubis.png)
+
+*Your interactions with the gods may become... personal.*
+
 ## 🎮 Play the Demo
 
 The current demo is available on itch.io.
